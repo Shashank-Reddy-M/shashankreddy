@@ -1,145 +1,129 @@
 /* Resetting default margin and padding */
 body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Header Styles */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Navigation Menu Styles */
+/* Navigation Menu (Tabs) Styles */
+nav {
+  background-color: #ddd;
+  display: flex; /* Make navigation a horizontal bar */
+}
+
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange tabs horizontally */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  flex: 1; /* Make tabs evenly sized */
+  text-align: center;
+  padding: 10px;
+  cursor: pointer; /* Indicate clickable tabs */
+  border-bottom: 2px solid transparent; /* Underline for active tab */
+}
+
+nav ul li.active { /* Style for active tab */
+  border-bottom-color: #007bff; /* Change underline color */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 /* Main Content Styles */
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  display: none; /* Initially hide all content sections */
+}
+
+/* Content Section Styles (shared) */
+.content {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
 h2 {
-    color: #007bff;
+  color: #007bff;
+  margin-bottom: 10px;
 }
 
 /* Links Section Styles */
 #links ul {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 #links ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 #links ul li a {
-    color: #007bff;
-    text-decoration: none;
-    border: 1px solid #007bff;
-    padding: 5px 10px;
-    border-radius: 5px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 #links ul li a:hover {
-    background-color: #007bff;
-    color: #fff;
+  background-color: #007bff;
+  color: #fff;
 }
 
-/* Experience Section Styles */
-.experience {
-    margin-bottom: 20px;
-}
+/* Show/Hide Content with JavaScript (optional) */
+/*
+This part requires adding some JavaScript to handle tab clicks and show/hide content sections. Here's a basic example:
 
-.experience h3 {
-    color: #007bff;
-}
+let tabLinks = document.querySelectorAll('nav ul li');
 
-.experience p {
-    margin-bottom: 10px;
-}
+tabLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    let activeTab = document.querySelector('nav ul li.active');
+    activeTab.classList.remove('active');
+    this.classList.add('active');
 
-.experience ul {
-    margin-left: 20px;
-}
-
-.experience ul li {
-    margin-bottom: 5px;
-}
-
-/* Education Section Styles */
-.education {
-    margin-bottom: 20px;
-}
-
-.education h3 {
-    color: #007bff;
-}
-
-.education p {
-    margin-bottom: 10px;
-}
-
-/* Project Section Styles */
-.project {
-    margin-bottom: 20px;
-}
-
-.project h3 {
-    color: #007bff;
-}
-
-.project p {
-    margin-bottom: 10px;
-}
-
-/* Certification Section Styles */
-.certification {
-    margin-bottom: 20px;
-}
-
-.certification h3 {
-    color: #007bff;
-}
-
-.certification p {
-    margin-bottom: 10px;
-}
+    let contentToShow = document.getElementById(this.dataset.target); // Assuming data-target attribute is set for each tab
+    let allContent = document.querySelectorAll('section');
+    allContent.forEach(section => section.style.display = 'none');
+    contentToShow.style.display = 'block';
+  });
+});
+*/
 
 /* Footer Styles */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #007bff;
-    color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
 }
