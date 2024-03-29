@@ -1,0 +1,145 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+/* Links Section Styles */
+#links ul {
+    display: flex;
+    justify-content: center;
+}
+
+#links ul li {
+    margin-right: 20px;
+}
+
+#links ul li a {
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#links ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Experience Section Styles */
+.experience {
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    color: #007bff;
+}
+
+.experience p {
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    margin-left: 20px;
+}
+
+.experience ul li {
+    margin-bottom: 5px;
+}
+
+/* Education Section Styles */
+.education {
+    margin-bottom: 20px;
+}
+
+.education h3 {
+    color: #007bff;
+}
+
+.education p {
+    margin-bottom: 10px;
+}
+
+/* Project Section Styles */
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #007bff;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+/* Certification Section Styles */
+.certification {
+    margin-bottom: 20px;
+}
+
+.certification h3 {
+    color: #007bff;
+}
+
+.certification p {
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
