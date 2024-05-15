@@ -409,7 +409,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Experience
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
@@ -470,7 +470,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Projects
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
@@ -570,7 +570,36 @@ section {
   bottom: 0;
 }
 
+/*********************************/
 
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio .col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.3333%;
+}
+
+.portfolio .col-md-6 {
+  flex: 0 0 auto;
+  width: 33.3333%;
+}
+
+.portfolio .portfolio-item {
+  float: left;
+  margin-bottom: 30px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.portfolio .portfolio-wrap img.img-fluid {
+  display: block;
+  width: 100%;
+}
+
+/*********************************/
 /*--------------------------------------------------------------
 # Certifications
 --------------------------------------------------------------*/

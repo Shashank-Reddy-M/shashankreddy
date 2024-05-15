@@ -755,4 +755,5 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   })
   Waypoint.Adapter = NoFrameworkAdapter
 }())
-;
+Done
+
